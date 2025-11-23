@@ -16,7 +16,16 @@ import {
   Calculator, 
   Globe,
   ArrowRight,
-  ChevronRight
+  ChevronRight,
+  Plane,
+  Shield,
+  MessageCircle,
+  FileText,
+  Headphones,
+  Mic,
+  Users as UsersIcon,
+  Eye,
+  Clock
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -451,6 +460,129 @@ const quizCategories: Category[] = [
         icon: <Building className="w-6 h-6" />,
         description: 'Banking and financial knowledge',
         chapters: ['Banking Operations', 'Financial Products', 'Regulations', 'Economics']
+      }
+    ]
+  },
+  {
+    id: 'ielts',
+    name: 'IELTS Preparation',
+    icon: <Plane className="w-8 h-8" />,
+    description: 'International English Language Testing System preparation',
+    subcategories: ['Academic', 'General Training', 'Mock Tests'],
+    subjects: [
+      {
+        id: 'reading',
+        name: 'IELTS Reading',
+        icon: <FileText className="w-6 h-6" />,
+        description: 'Reading comprehension for IELTS',
+        chapters: ['Academic Reading', 'General Training Reading', 'Skimming & Scanning', 'Time Management']
+      },
+      {
+        id: 'writing',
+        name: 'IELTS Writing',
+        icon: <FileText className="w-6 h-6" />,
+        description: 'Writing skills for IELTS',
+        chapters: ['Task 1 Academic', 'Task 1 General', 'Task 2 Essay', 'Writing Structure']
+      },
+      {
+        id: 'listening',
+        name: 'IELTS Listening',
+        icon: <Headphones className="w-6 h-6" />,
+        description: 'Listening comprehension for IELTS',
+        chapters: ['Section 1-4 Practice', 'Note-taking Skills', 'Audio Types', 'Prediction Skills']
+      },
+      {
+        id: 'speaking',
+        name: 'IELTS Speaking',
+        icon: <Mic className="w-6 h-6" />,
+        description: 'Speaking skills for IELTS',
+        chapters: ['Part 1 Introduction', 'Part 2 Cue Card', 'Part 3 Discussion', 'Fluency & Pronunciation']
+      },
+      {
+        id: 'vocabulary',
+        name: 'Vocabulary Building',
+        icon: <BookOpen className="w-6 h-6" />,
+        description: 'Essential vocabulary for IELTS',
+        chapters: ['Academic Vocabulary', 'Topic-based Vocabulary', 'Collocations', 'Idioms & Phrases']
+      },
+      {
+        id: 'grammar',
+        name: 'Grammar Essentials',
+        icon: <Globe className="w-6 h-6" />,
+        description: 'Grammar for IELTS success',
+        chapters: ['Tense Usage', 'Sentence Structure', 'Complex Sentences', 'Common Errors']
+      },
+      {
+        id: 'mock-tests',
+        name: 'Full Mock Tests',
+        icon: <Clock className="w-6 h-6" />,
+        description: 'Complete IELTS practice tests',
+        chapters: ['Full Academic Tests', 'Full General Training Tests', 'Timed Practice', 'Score Analysis']
+      }
+    ]
+  },
+  {
+    id: 'issb',
+    name: 'ISSB Preparation',
+    icon: <Shield className="w-8 h-8" />,
+    description: 'Inter Services Selection Board test preparation',
+    subcategories: ['Screening Test', 'Psychological Test', 'Interview', 'GTO Tasks'],
+    subjects: [
+      {
+        id: 'intelligence-test',
+        name: 'Intelligence Test',
+        icon: <Brain className="w-6 h-6" />,
+        description: 'Verbal and non-verbal intelligence tests',
+        chapters: ['Verbal Reasoning', 'Non-Verbal Reasoning', 'Pattern Recognition', 'Analogies']
+      },
+      {
+        id: 'verbal-reasoning',
+        name: 'Verbal Reasoning',
+        icon: <MessageCircle className="w-6 h-6" />,
+        description: 'Advanced verbal reasoning skills',
+        chapters: ['Logical Deduction', 'Critical Reasoning', 'Reading Comprehension', 'Word Problems']
+      },
+      {
+        id: 'non-verbal-reasoning',
+        name: 'Non-Verbal Reasoning',
+        icon: <Eye className="w-6 h-6" />,
+        description: 'Visual and spatial reasoning',
+        chapters: ['Series Completion', 'Figure Analysis', 'Spatial Reasoning', 'Mirror Images']
+      },
+      {
+        id: 'academic-subjects',
+        name: 'Academic Subjects',
+        icon: <BookOpen className="w-6 h-6" />,
+        description: 'General academic knowledge',
+        chapters: ['Mathematics', 'Physics', 'Chemistry', 'General Knowledge', 'Current Affairs']
+      },
+      {
+        id: 'psychological-assessment',
+        name: 'Psychological Assessment',
+        icon: <UsersIcon className="w-6 h-6" />,
+        description: 'Personality and psychological tests',
+        chapters: ['Word Association Test', 'Story Writing', 'Sentence Completion', 'Self Description']
+      },
+      {
+        id: 'group-discussion',
+        name: 'Group Discussion',
+        icon: <UsersIcon className="w-6 h-6" />,
+        description: 'Group discussion and leadership skills',
+        chapters: ['Leadership Skills', 'Communication', 'Problem Solving', 'Team Work']
+      },
+      {
+        id: 'outdoor-tasks',
+        name: 'Outdoor Tasks (GTO)',
+        icon: <Shield className="w-6 h-6" />,
+        description: 'Group testing officer tasks',
+        chapters: ['Group Planning', 'Progressive Group Task', 'Half Group Task', 'Individual Obstacles']
+      },
+      {
+        id: 'interview-preparation',
+        name: 'Interview Preparation',
+        icon: <Briefcase className="w-6 h-6" />,
+        description: 'Personal interview preparation',
+        chapters: ['Personal Questions', 'Situational Questions', 'Current Affairs', 'Defense Knowledge']
       }
     ]
   }
